@@ -4,7 +4,9 @@
   "description": "modern dashboard",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "dev": "gulp watch",
+    "test": "npm run build && node scripts/verify-dist.js"
   },
   "author": "mahmoud hussien",
   "license": "ISC",
@@ -17,9 +19,9 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
     "gulp-minify": "^3.1.0",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "6.0.1",
+    "sass": "1.105.1"
   }
 }
